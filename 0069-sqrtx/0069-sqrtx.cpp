@@ -1,21 +1,21 @@
 class Solution {
 public:
-    int binarySearch(int n) {
+    int binarySearch(int x) {
         int start = 0;
-        int end = n;
-        long long int mid = start +( end - start )/2;
+        int end = x;
+        long long int mid = start + (end - start)/2;
         long long int ans = -1;
         while(start <= end) {
             long long int square = mid * mid;
-            if(square == n) {
+            if(square == x) {
                 return mid;
             }
-            else if (square < n) {
+            else if(square > x) {
+                end = mid -1;
+            }
+            else if(square < x) {
                 ans = mid;
                 start = mid + 1;
-            }
-            else if (square > n) {
-                end = mid - 1;
             }
             mid = start + (end - start)/2;
         }
