@@ -9,7 +9,7 @@ public:
             }
         }
         
-        if(Upper == n or Upper == 0 or (word[0] >= 'A' && word[0] <= 'Z' && Upper == 1)) {
+        if(Upper == n || Upper == 0 || (word[0] >= 'A' && word[0] <= 'Z' && Upper == 1)) {
             return true;
         }
         return false;
