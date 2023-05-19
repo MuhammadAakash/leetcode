@@ -13,7 +13,7 @@ var debounce = function(fn, t) {
                 fn(...args);
                 clearInterval(interval);
             }
-        })
+        }, 1)
     }
 };
 
