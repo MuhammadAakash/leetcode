@@ -1,0 +1,15 @@
+declare global { 
+    interface Function {
+      callPolyfill(context: Record<any, any>, ...args: any[]): any;
+	}
+}
+
+Function.prototype.callPolyfill = function(context: Record<any, any>, ...args: any[]): any {
+    return this.bind(context)(...args)
+
+}
+
+/**
+ * function increment() { this.count++; return this.count; }
+ * increment.callPolyfill({count: 1}); // 2
+ */
