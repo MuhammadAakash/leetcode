@@ -14,6 +14,16 @@ public:
         this->prev = NULL;
         this->next = NULL;
     }
+
+    ~Node()
+    {
+        cout << "Deleting Node with data " << this->data << endl;
+        if (next != NULL)
+        {
+            delete next;
+            next = NULL;
+        }
+    }
 };
 
 void print(Node *head)
@@ -114,6 +124,40 @@ void inserAtPosition(Node *&tail, Node *&head, int position, int d)
         temp->next = newNode;
     }
 }
+
+// Delete any Node;
+void deleteNode(int position, Node *&head)
+{
+
+    // IF first position
+    if (position == 1)
+    {
+        Node *temp = head;
+        temp->next->prev = NULL;
+        head = temp->next;
+        temp->next = NULL;
+        delete temp;
+    }
+    else
+    {
+        Node *prev = NULL;
+        Node *current = head;
+
+        int cnt = 1;
+        while (cnt < position)
+        {
+            prev = current;
+            current = current->next;
+            cnt++;
+        }
+
+        current->prev = NULL;
+        prev->next = current->next;
+        current->next = NULL;
+        delete current;
+    }
+}
+
 int main()
 {
 
@@ -140,5 +184,8 @@ int main()
     print(head);
 
     inserAtPosition(tail, head, 6, 70);
+    print(head);
+
+    deleteNode(3, head);
     print(head);
 }
