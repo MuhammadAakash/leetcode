@@ -24,4 +24,12 @@
 | ------- |
 | [0442-find-all-duplicates-in-an-array](https://github.com/MuhammadAakash/leetcode/tree/master/0442-find-all-duplicates-in-an-array) |
 | [1319-unique-number-of-occurrences](https://github.com/MuhammadAakash/leetcode/tree/master/1319-unique-number-of-occurrences) |
+## String
+|  |
+| ------- |
+| [1537-maximum-score-after-splitting-a-string](https://github.com/MuhammadAakash/leetcode/tree/master/1537-maximum-score-after-splitting-a-string) |
+## Prefix Sum
+|  |
+| ------- |
+| [1537-maximum-score-after-splitting-a-string](https://github.com/MuhammadAakash/leetcode/tree/master/1537-maximum-score-after-splitting-a-string) |
 <!---LeetCode Topics End-->
