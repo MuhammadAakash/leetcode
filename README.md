@@ -37,4 +37,8 @@
 |  |
 | ------- |
 | [3461-find-the-minimum-area-to-cover-all-ones-i](https://github.com/MuhammadAakash/leetcode/tree/master/3461-find-the-minimum-area-to-cover-all-ones-i) |
+## Database
+|  |
+| ------- |
+| [1683-invalid-tweets](https://github.com/MuhammadAakash/leetcode/tree/master/1683-invalid-tweets) |
 <!---LeetCode Topics End-->
