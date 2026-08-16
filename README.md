@@ -40,6 +40,7 @@
 ## Database
 |  |
 | ------- |
+| [0197-rising-temperature](https://github.com/MuhammadAakash/leetcode/tree/master/0197-rising-temperature) |
 | [1068-product-sales-analysis-i](https://github.com/MuhammadAakash/leetcode/tree/master/1068-product-sales-analysis-i) |
 | [1148-article-views-i](https://github.com/MuhammadAakash/leetcode/tree/master/1148-article-views-i) |
 | [1378-replace-employee-id-with-the-unique-identifier](https://github.com/MuhammadAakash/leetcode/tree/master/1378-replace-employee-id-with-the-unique-identifier) |
